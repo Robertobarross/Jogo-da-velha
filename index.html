@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link do icon -->
+    <link rel="shortcut icon" href="./img/velha.png" type="image/x-icon">
+    <!-- link CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <title>JOGO DA VELHA</title>
+</head>
+<body>
+
+    <h1>JOGO DA VELHA</h1>
+
+    <!-- Div central onde vai conter o jogo -->
+    <div class="jogo-da-velha">
+        <!-- Cada div dessas a baixo representa um quadrado -->
+        <div>
+            <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+            <div id="2" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+            <div id="3" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        </div>
+
+        <div>
+            <div id="4" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+            <div id="5" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+            <div id="6" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        </div>
+
+        <div>
+            <div id="7" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+            <div id="8" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+            <div id="9" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        </div>
+    </div>
+
+    <!-- Nome do jogador -->
+    <div class="jogador">
+        <label>
+            JOGADOR:
+        </label>
+        <label id="jogador-selecionado">
+        </label>
+    </div>
+
+    <!-- Nome do vencedor -->
+    <div class="vencedor">
+        <label>
+            VENCEDOR:
+        </label>
+        <label id="vencedor-selecionado">
+        </label>
+    </div>
+
+    <!-- Botão reiniciar -->
+    <div>
+        <button onclick="reiniciar()">
+            INICIAR
+        </button>
+    </div>
+
+    <!-- Link do JavaScript -->
+    <script src="./script.js"></script>
+    
+</body>
+</html>
